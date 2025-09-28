@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #0b0c10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .neon-text {
+    font-size: 48px;
+    color: white;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #f0f,
+      0 0 20px #f0f,
+      0 0 40px #f0f;
+    z-index: 2;
+    position: relative;
+    margin-top: -100px;
+  }
+  
+  .neon-heart {
+    width: 400px;
+    height: 400px;
+    fill: none;
+    stroke: #ff00ff;
+    stroke-width: 8;
+    filter: drop-shadow(0 0 5px #ff00ff)
+            drop-shadow(0 0 10px #ff00ff)
+            drop-shadow(0 0 20px #ff00ff)
+            drop-shadow(0 0 30px #00ffff);
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      stroke: #ff00ff;
+      filter: drop-shadow(0 0 5px #ff00ff)
+              drop-shadow(0 0 10px #ff00ff);
+    }
+    100% {
+      stroke: #00ffff;
+      filter: drop-shadow(0 0 5px #00ffff)
+              drop-shadow(0 0 10px #00ffff)
+              drop-shadow(0 0 20px #00ffff)
+              drop-shadow(0 0 30px #ff00ff);
+    }
+  }
+  

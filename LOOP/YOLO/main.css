@@ -1,0 +1,13 @@
+.container{
+    padding: 0px;
+    margin: 0px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.name{
+    padding-right: 100px;
+    padding-left: 100px;
+    display: flex;
+    margin-right: 50px;
+}
